@@ -5,11 +5,11 @@ tracer:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:21021/test
+      uri: "{cipher}da9c806a4f2bce825ff8e1fd721284209173ec9f1de72d1b8e24bd9c6de9789bf7626b9ae48ba1a7d5a395837c180bcb"
 management:
   endpoints:
     web:
       exposure:
         include: info, health, env
 example:
-  property: "Some value"
+  property: "{cipher}5124189b1bea8d0175f256d57f6dfe944068f10ce9627e86cd49b1ab3e89d8e6"
