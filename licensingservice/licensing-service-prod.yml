@@ -1,0 +1,10 @@
+tracer:
+  property: "I AM THE DEFAULT"
+
+################### MongoDB Configuration ##########################
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:21021/test
+example:
+  property: "Some value"

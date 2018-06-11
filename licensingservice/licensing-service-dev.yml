@@ -1,0 +1,15 @@
+tracer:
+  property: "I AM THE DEFAULT"
+
+################### MongoDB Configuration ##########################
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:21021/test
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, env
+example:
+  property: "Some value"
