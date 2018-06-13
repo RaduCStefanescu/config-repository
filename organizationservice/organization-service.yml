@@ -1,0 +1,15 @@
+tracer:
+  property: "I AM THE DEFAULT"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, env
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: "{cipher}52ac05eaf78010a930625e730025cced00b6f16c4ec3fc19c7c513146d0007f03d8ee2f103aea595494a5944169ffef4"
+  instance:
+    preferIpAddress: true
