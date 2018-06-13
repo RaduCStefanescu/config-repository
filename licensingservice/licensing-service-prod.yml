@@ -1,5 +1,5 @@
 tracer:
-  property: "I AM THE DEFAULT"
+  property: "I AM THE PROD"
 
 ################### MongoDB Configuration ##########################
 spring:
@@ -8,3 +8,11 @@ spring:
       uri: "{cipher}da9c806a4f2bce825ff8e1fd721284209173ec9f1de72d1b8e24bd9c6de9789bf7626b9ae48ba1a7d5a395837c180bcb"
 example:
   property: "{cipher}5124189b1bea8d0175f256d57f6dfe944068f10ce9627e86cd49b1ab3e89d8e6"
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8787/eureka
+  instance:
+    preferIpAddress: true

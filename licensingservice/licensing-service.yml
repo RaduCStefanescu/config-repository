@@ -13,3 +13,11 @@ management:
         include: info, health, env
 example:
   property: "{cipher}5124189b1bea8d0175f256d57f6dfe944068f10ce9627e86cd49b1ab3e89d8e6"
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8787/eureka
+  instance:
+    preferIpAddress: true
