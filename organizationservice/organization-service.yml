@@ -5,6 +5,8 @@ management:
     web:
       exposure:
         include: info, health, env
+server:
+  port: 8990
 eureka:
   client:
     registerWithEureka: true
