@@ -1,5 +1,12 @@
 tracer:
   property: "I AM THE PROD"
+
+################### MongoDB Configuration ##########################
+spring:
+  data:
+    mongodb:
+      uri: "{cipher}da9c806a4f2bce825ff8e1fd721284209173ec9f1de72d1b8e24bd9c6de9789bf7626b9ae48ba1a7d5a395837c180bcb"
+      
 management:
   endpoints:
     web:
