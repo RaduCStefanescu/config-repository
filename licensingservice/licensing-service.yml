@@ -1,6 +1,9 @@
 tracer:
   property: "I AM THE DEFAULT"
 
+logging:
+  file: "/Users/radustefanescu/IdeaProjects/microservicescomplete/application.log"
+
 ################### MongoDB Configuration ##########################
 spring:
   data:
