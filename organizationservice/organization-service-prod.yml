@@ -6,7 +6,16 @@ spring:
   data:
     mongodb:
       uri: "{cipher}da9c806a4f2bce825ff8e1fd721284209173ec9f1de72d1b8e24bd9c6de9789bf7626b9ae48ba1a7d5a395837c180bcb"
-      
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: orgChangeTopic
+          content-type: application/json
+        kafka:
+          binder:
+            zkNodes: localhost
+            brokers: localhost
 management:
   endpoints:
     web:
