@@ -3,7 +3,7 @@ tracer:
 
 logging:
   file: "/Users/radustefanescu/IdeaProjects/microservicescomplete/application.log"
-  
+
 ################### MongoDB Configuration ##########################
 spring:
   data:
@@ -19,7 +19,8 @@ spring:
           binder:
             zkNodes: localhost
             brokers: localhost
-
+  zipkin:
+    baseUrl: http://localhost:9411
 management:
   endpoints:
     web:
